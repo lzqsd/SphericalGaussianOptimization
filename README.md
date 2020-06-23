@@ -7,5 +7,5 @@ Please cite the paper if you find the code to be useful in your own project. Ple
 
 ## Instructions
 To run the code, use the following command
-`python optimEnvSplit.py --dataRoot DATA`
+`python optimEnvSplit.py --cuda --dataRoot DATA`
 
