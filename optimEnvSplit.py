@@ -15,7 +15,7 @@ import cv2
 
 parser = argparse.ArgumentParser()
 # The locationi of training set
-parser.add_argument('--dataRoot', default='/siggraphasia20dataset/code/Routine/DatasetCreation/', help='path to images')
+parser.add_argument('--dataRoot', default=None, help='path to images')
 # The basic training setting
 parser.add_argument('--batchSize', type=int, default=1, help='input batch size')
 parser.add_argument('--envRow', type=int, default=120, help='the number of samples of envmaps in y direction')
@@ -26,7 +26,7 @@ parser.add_argument('--envWidth', type=int, default=32, help='the size of envmap
 parser.add_argument('--cuda', action='store_true', help='enables cuda')
 parser.add_argument('--deviceIds', type=int, nargs='+', default=[0], help='the gpus used for training network')
 parser.add_argument('--rs', type=int, default=0, help='start point of optimizing the environmental map')
-parser.add_argument('--re', type=int, default=1000, help='end point of optimizing the environmental map')
+parser.add_argument('--re', type=int, default=10000, help='end point of optimizing the environmental map')
 
 # The detail network setting
 opt = parser.parse_args()
