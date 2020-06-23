@@ -6,6 +6,6 @@ Please cite the paper if you find the code to be useful in your own project. Ple
 ![](http://cseweb.ucsd.edu/~viscomp/projects/CVPR20InverseIndoor/github/sphericalGaussian.png)
 
 ## Instructions
-To run the code, use the following command
-`python optimEnvSplit.py --cuda --dataRoot DATA`
+To run the code, use the command
+`python optimEnvSplit.py --cuda --dataRoot DATA`, where `DATA` is the path to the synthetic dataset.
 
